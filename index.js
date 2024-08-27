@@ -1,23 +1,11 @@
 const { compileTemplateToHtml, generateHtmlToPdf } = require("./helper");
 const { writeFile } = require("node:fs");
 
-(async () => {
+const generationPDF = async (body) => {
   try {
-    // Exemples variables d'entrée (inutilisées pour l'instant)
-    // TODO: utiliser un objet contenant toutes les variables d'entrée
-    // en tant que, par exemple, propriétés
-    const name = "";
-    certificateFor = "";
-    organization = "";
 
     // Compile le template "bulletin.hbs" -> html
-    // TODO: Le template "bulletin.hbs" doit être rendu dynamique
-    // avec incorporation des variables en entrée
-    const html = await compileTemplateToHtml("bulletin", {
-      name,
-      certificateFor,
-      organization,
-    });
+    const html = await compileTemplateToHtml("bulletin", body);
 
     // Transfo html -> pdf
     const pdf = await generateHtmlToPdf(html);
@@ -33,4 +21,6 @@ const { writeFile } = require("node:fs");
   } catch (error) {
     throw error;
   }
-})();
+};
+
+module.exports.generationPDF = generationPDF;
