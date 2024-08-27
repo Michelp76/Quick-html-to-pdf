@@ -10,12 +10,21 @@
             padding: 0;
         }
 
+        html {
+            -webkit-print-color-adjust: exact;
+        }        
+
         table {
             border-collapse: collapse;
             font-size: 7pt;
         }
 
         tr {}
+
+        .grayed td {
+            background-color: #eee !important;
+            border: solid 1px white;
+        }
 
         td {
             padding: 3;
