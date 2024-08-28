@@ -1,14 +1,14 @@
 const { compileTemplateToHtml, generateHtmlToPdf } = require("./helper");
 const { writeFile } = require("node:fs");
 
-const generationPDF = async (body) => {
+const generationPDF = async (body, isDebug = false) => {
   try {
 
     // Compile le template "bulletin.hbs" -> html
     const html = await compileTemplateToHtml("bulletin", body);
 
     // Transfo html -> pdf
-    const pdf = await generateHtmlToPdf(html);
+    const pdf = await generateHtmlToPdf(html, isDebug);
 
     // Nom de fichier pdf
     const pdfName = "Bulletin.pdf";
@@ -18,7 +18,7 @@ const generationPDF = async (body) => {
       if (err) throw err;
       console.log(`The pdf file ${pdfName} has been saved!`);
     });
-  } catch (error) {
+  } catch (error) { 
     throw error;
   }
 };

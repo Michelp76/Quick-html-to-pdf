@@ -12,10 +12,10 @@ const compileTemplateToHtml = async (templateName, data) => {
     throw error;
   }
 };
-const generateHtmlToPdf = async (htmlContent) => {
+const generateHtmlToPdf = async (htmlContent, isDebug = false) => {
   try {
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: isDebug ? false : true,
       ignoreDefaultArgs: ["--disable-extensions"],
       args: [
         "--no-sandbox",
@@ -23,16 +23,15 @@ const generateHtmlToPdf = async (htmlContent) => {
         "--hide-scrollbars",
         "--disable-gpu",
         "--mute-audio",
-        "--disable-dev-shm-usage"
+        "--disable-dev-shm-usage",
       ],
     });
     const page = await browser.newPage();
     await page.setContent(htmlContent);
     const pdf = await page.pdf({
       landscape: false,
-      
     });
-    browser.close();
+    if (!isDebug) browser.close();
     return pdf;
   } catch (error) {
     throw error;
