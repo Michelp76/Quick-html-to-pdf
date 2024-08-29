@@ -7,8 +7,10 @@
         * {
             font-family: 'Source Sans Pro', serif;
             font-size: 8pt;
-            margin: 0;
-            padding: 0;
+        }
+
+        @page {
+            margin: 40px 40px;
         }
 
         html {
@@ -20,20 +22,17 @@
             width: 100%;
         }
 
-        tr {}
-
-        .grayed td {
-            background-color: #eee !important;
-            border: solid 1px white;
+        td {
+            padding: 4;
         }
 
-        td {
-            padding: 3;
+        .infoSal {
+            border: solid 1px #fcfcfc;
         }
     </style>
 </head>
 
-<body style="width: 88%; margin: 20 auto 20 auto;">
+<body>
     <div>
         <div>
             <div>
@@ -53,7 +52,7 @@
                                     <div>{{siretNaf}}</div>
                                 </td>
                                 <td style="width: 44%;">
-                                    <div style="font-size:14pt;">BULLETIN DE SALAIRE</div>
+                                    <div style="font-size:11pt;">BULLETIN DE SALAIRE</div>
                                     <div>Période de paie :
                                         01/08/2021 au 31/08/2021</div>
                                     <div>N°Bul/Ind : 000001/00 MAT ..... : 2068</div>
@@ -67,22 +66,22 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <div> </div>
+                                    <div></div>
                                     <div style="text-decoration:underline;">
                                         Établissement</div>
-                                    <div>BLISH CAVANAGH </div>
-                                    <div>1Er Etage </div>
+                                    <div>BLISH CAVANAGH</div>
+                                    <div>1Er Etage</div>
                                     <div>6 B Rue Georges Tarral</div>
                                     <div>06210 MANDELIEU LA NAPOULE</div>
                                     <div>SIRET : 151122573 00045 NAF : 9002Z</div>
                                 </td>
                                 <td>
-                                    <div style="height:30mm;">
-                                        <div style="margin-top:10.00mm;margin-left:22.00mm; text-align:left; ">
+                                    <div style="height:26mm;">
+                                        <div>
                                             <div style="font-size:11pt;">M. Connolly Vivienne</div>
-                                            <div>Bat B1 </div>
+                                            <div>Bat B1</div>
                                             <div>9 A CHEMIN DE LA MARE</div>
-                                            <div>epinay sur seine </div>
+                                            <div>epinay sur seine</div>
                                             <div>38200 Armentieres</div>
                                         </div>
                                     </div>
@@ -91,75 +90,61 @@
                         </tbody>
                     </table>
                 </div>
-                <div>
-                    <table>
-                        <tbody style="width: 100%;">
-                            <tr style="text-align:center; ">
-                                <td>
-                                    <div> N° Sécurité sociale </div>
-                                </td>
-                                <td>
-                                    <div> Date entrée </div>
-                                </td>
-                                <td>
-                                    <div> Date entrée groupe </div>
-                                </td>
-                                <td>
-                                    <div>Date sortie </div>
-                                </td>
-                                <td>
-                                    <div>Période travaillée </div>
-                                </td>
-                                <td>
-                                    <div> </div>
-                                </td>
-                            </tr>
-                            <tr style="text-align:center;">
-                                <td>
-                                    <div>1730392900206 02</div>
-                                </td>
-                                <td>
-                                    <div> 01/01/2012 </div>
-                                </td>
-                                <td>
-                                    <div> 05/04/2004 </div>
-                                </td>
-                                <td>
-                                    <div> </div>
-                                </td>
-                                <td>
-                                    <div> 01/08/2021 au 31/08/2021 </div>
-                                </td>
-                                <td>
-                                    <div> </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <table>
-                        <col />
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div>
-                                        <span>Emploi : </span>Directeur(ice) Technique<span>
-                                            Niv : </span>GRP7
-                                    </div>
-                                    <div>
-                                        <span>Statut : </span>Contrat de Professionnalisat.
-                                        <span> :
-                                        </span>
-                                        <span />
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="height:26px;">
-                    <table>
+                <table class="infoSal">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div>N° Sécurité sociale</div>
+                            </td>
+                            <td>
+                                <div>Date entrée</div>
+                            </td>
+                            <td>
+                                <div>Date entrée groupe</div>
+                            </td>
+                            <td>
+                                <div>Date sortie</div>
+                            </td>
+                            <td>
+                                <div>Période travaillée</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>1730392900206 02</div>
+                            </td>
+                            <td>
+                                <div>01/01/2012</div>
+                            </td>
+                            <td>
+                                <div>05/04/2004</div>
+                            </td>
+                            <td>
+                                <div></div>
+                            </td>
+                            <td>
+                                <div>01/08/2021 au 31/08/2021</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="infoSal">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span>Emploi : </span>Directeur(ice) Technique<span>
+                                    Niv : </span>GRP7
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Statut : </span>Contrat de Professionnalisat.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div style="height:32px;">
+                    <table class="infoSal">
                         <col />
                         <tbody>
                             <tr>
@@ -174,70 +159,75 @@
                 <div>
                     <table>
                         <tbody>
-                            <tr>
-                                <td colspan="3" style="border-right:1px solid #eee;">
-                                    <div> </div>
-                                </td>
-                                <td colspan="3"
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Rémunérations et déductions</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Cotisations patronales</div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee;border-left:1px solid #eee; text-align:center;">
-                                    <div>Rub</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Libellé</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Nombre</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Taux</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Gain</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Retenue</div>
-                                </td>
-                                <td
-                                    style="border-top:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; background-color:#eee; text-align:center;">
-                                    <div>Montant</div>
-                                </td>
-                            </tr>
+                            <thead>
+                                <th>
+                                    <tr>
+                                        <td colspan="3" style="border-right:1px solid #f1f1f1;">
+                                            <div></div>
+                                        </td>
+                                        <td colspan="3"
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Rémunérations et déductions</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Cotisations patronales</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1;border-left:1px solid #f1f1f1; text-align:center;">
+                                            <div>Rub</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Libellé</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Nombre</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Taux</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Gain</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Retenue</div>
+                                        </td>
+                                        <td
+                                            style="border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; background-color:#f1f1f1; text-align:center;">
+                                            <div>Montant</div>
+                                        </td>
+                                    </tr>
+                                </th>
+                            </thead>
                             {{#each rubriques}}
                             <tr>
-                                <td style="border-right:1px solid #eee; border-left:1px solid #eee; text-align:center;">
+                                <td
+                                    style="border-right:1px solid #f1f1f1; border-left:1px solid #f1f1f1; text-align:center; ">
                                     <div>{{cdRub}}</div>
                                 </td>
-                                <td style="border-right:1px solid #eee; text-align:left;">
+                                <td style="border-right:1px solid #f1f1f1; text-align:left; ">
                                     <div>{{libRub}}</div>
                                 </td>
-                                <td style="border-right:1px solid #eee; text-align:right;">
+                                <td style="border-right:1px solid #f1f1f1; text-align:right; ">
                                     <div>{{nombre}}</div>
                                 </td>
-                                <td style="border-right:1px solid #eee; text-align:right;">
+                                <td style="border-right:1px solid #f1f1f1; text-align:right; ">
                                     <div>{{taux}}</div>
                                 </td>
-                                <td style="border-right:1px solid #eee; text-align:right;">
+                                <td style="border-right:1px solid #f1f1f1; text-align:right; ">
                                     <div>{{gain}}</div>
                                 </td>
-                                <td style="border-right:1px solid #eee; text-align:right;">
+                                <td style="border-right:1px solid #f1f1f1; text-align:right; ">
                                     <div>{{retenue}}</div>
                                 </td>
-                                <td style="border-right:1px solid #eee; text-align:right;">
+                                <td style="border-right:1px solid #f1f1f1; text-align:right; ">
                                     <div>{{montant}}</div>
                                 </td>
                             </tr>
@@ -246,126 +236,120 @@
                     <table style="page-break-inside: avoid;">
                         <tr>
                             <td colspan="4"
-                                style="border-left:1px solid #eee; border-right:1px solid #eee; border-top:1px solid #eee; text-align:left; ">
-                                <div>NET A PAYER AVANT IMPOT SUR LE REVENU </div>
+                                style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-top:1px solid #f1f1f1; text-align:left; ">
+                                <div>NET A PAYER AVANT IMPOT SUR LE REVENU</div>
                             </td>
                             <td colspan="3"
-                                style="border-right:1px solid #eee; border-top:1px solid #eee; text-align:right; vertical-align:middle;">
-                                <div> </div>
+                                style="border-right:1px solid #f1f1f1; border-top:1px solid #f1f1f1; text-align:right; vertical-align:middle;">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:left;line-height:7px;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:left;line-height:7px;">
+                                <div></div>
                             </td>
                         </tr>
-                        <tr style="background-color:#eee; ">
+                        <tr style="background-color:#f1f1f1; ">
                             <td colspan="2"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:center;">
-                                <div> Impôt sur le revenu</div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:center;">
+                                <div>Impôt sur le revenu</div>
                             </td>
                             <td
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:center;">
-                                <div> Base</div>
-                            </td>
-                            <td colspan="2"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:center;">
-                                <div> Taux </div>
-                            </td>
-                            <td
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:center;">
-                                <div> Montant</div>
-                            </td>
-                            <td
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:center;">
-                                <div> Cumul</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:left;">
-                                <div> </div>
-                            </td>
-                            <td
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:center;">
+                                <div>Base</div>
                             </td>
                             <td colspan="2"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:center;">
+                                <div>Taux</div>
                             </td>
                             <td
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:center;">
+                                <div>Montant</div>
                             </td>
                             <td
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:center;">
+                                <div>Cumul</div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2"
-                                style="border-left:1px solid #eee;                              border-right:1px solid #eee; text-align:left;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:left;">
+                                <div></div>
                             </td>
                             <td
-                                style="border-left:1px solid #eee;                              border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
                             </td>
                             <td colspan="2"
-                                style="border-left:1px solid #eee;                              border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
                             </td>
                             <td
-                                style="border-left:1px solid #eee;                              border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
                             </td>
                             <td
-                                style="border-left:1px solid #eee;                              border-right:1px solid #eee; text-align:right;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="7"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:left;line-height:7px;">
-                                <div> </div>
+                            <td colspan="2"
+                                style="border-left:1px solid #f1f1f1;                              border-right:1px solid #f1f1f1; text-align:left;">
+                                <div></div>
+                            </td>
+                            <td
+                                style="border-left:1px solid #f1f1f1;                              border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
+                            </td>
+                            <td colspan="2"
+                                style="border-left:1px solid #f1f1f1;                              border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
+                            </td>
+                            <td
+                                style="border-left:1px solid #f1f1f1;                              border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
+                            </td>
+                            <td
+                                style="border-left:1px solid #f1f1f1;                              border-right:1px solid #f1f1f1; text-align:right;">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="4"
-                                style="border-left:1px solid #eee; border-right:1px solid #eee; border-top:1px solid #eee; text-align:left; ">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-top:1px solid #f1f1f1; text-align:left; ">
+                                <div></div>
                             </td>
                             <td colspan="2" rowspan="2"
-                                style="                             border-right:1px solid #eee; border-top:1px solid #eee; text-align:right; vertical-align:middle;">
-                                <div>NET A PAYER </div>
+                                style="                             border-right:1px solid #f1f1f1; border-top:1px solid #f1f1f1; text-align:right; vertical-align:middle;">
+                                <div>NET A PAYER</div>
                             </td>
                             <td rowspan="2"
-                                style="                             border-right:1px solid #eee; border-top:1px solid #eee; text-align:right; vertical-align:middle;">
-                                <div> </div>
+                                style="                             border-right:1px solid #f1f1f1; border-top:1px solid #f1f1f1; text-align:right; vertical-align:middle;">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="4"
-                                style="border-left:1px solid #eee; border-right:1px solid #eee; text-align:left; ">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:left; ">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-left:1px solid #eee; border-top:1px solid #eee; border-right:1px solid #eee; text-align:left;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-top:1px solid #f1f1f1; border-right:1px solid #f1f1f1; text-align:left;">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-left:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee; text-align:left;">
-                                <div> </div>
+                                style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:left;">
+                                <div></div>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="7" style="border-left:1px solid #eee; border-right:1px solid #eee;">
+                            <td colspan="7" style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1;">
                                 <table cellpadding="0" cellspacing="0" style="width:100%;">
                                     <col style="width:2.2cm;" />
                                     <col style="width:0.8cm;" />
@@ -391,269 +375,269 @@
                                     <col style="width:0.8cm;" />
                                     <tbody>
                                         <tr>
-                                            <td style="border-bottom:1px solid #eee;">
-                                                <div> </div>
-                                                <div> Code</div>
-                                                <div> Horaire</div>
+                                            <td style="border-bottom:1px solid #f1f1f1;">
+                                                <div></div>
+                                                <div>Code</div>
+                                                <div>Horaire</div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-bottom:1px solid #eee;">
-                                                <div> </div>
-                                                <div> Code</div>
-                                                <div> Horaire</div>
+                                            <td style="border-bottom:1px solid #f1f1f1;">
+                                                <div></div>
+                                                <div>Code</div>
+                                                <div>Horaire</div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-left:1px solid #eee; border-bottom:1px solid #eee; text-align:center;">
-                                                <div> </div>
-                                                <div> </div>
-                                                <div> </div>
+                                                style="border-left:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1; text-align:center;">
+                                                <div></div>
+                                                <div></div>
+                                                <div></div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -662,14 +646,14 @@
                         </tr>
                         <tr>
                             <td colspan="7"
-                                style="border-left:1px solid #eee; border-right:1px solid #eee; border-bottom:1px solid #eee;">
+                                style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1; border-bottom:1px solid #f1f1f1;">
                                 <div>
 
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="7" style="border-left:1px solid #eee; border-right:1px solid #eee;">
+                            <td colspan="7" style="border-left:1px solid #f1f1f1; border-right:1px solid #f1f1f1;">
                                 <table>
                                     <col style="width:5%;" />
                                     <col style="width:7%;" />
@@ -683,167 +667,167 @@
                                     <col style="width:6%;" />
                                     <col style="width:6%;" />
                                     <tbody>
-                                        <tr style="background-color:#eee;">
+                                        <tr style="background-color:#f1f1f1;">
                                             <td
-                                                style="border-bottom:1px solid #eee;                               text-align:center;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1;                               text-align:center;">
+                                                <div></div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> H trav. </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div>H trav.</div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> H payées </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div>H payées</div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div></div>
                                             </td>
                                             <td colspan="4"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> CUMUL ANNEE </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div>CUMUL ANNEE</div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div></div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> CP Anter </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div>CP Anter</div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee;  text-align:center;">
-                                                <div> CP Année </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1;  text-align:center;">
+                                                <div>CP Année</div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-bottom:1px solid #eee;" rowspan="2">
-                                                <div> Mois</div>
+                                            <td style="border-bottom:1px solid #f1f1f1;" rowspan="2">
+                                                <div>Mois</div>
                                             </td>
-                                            <td style="border-bottom:1px solid #eee;border-left:1px solid #eee; text-align:right;"
+                                            <td style="border-bottom:1px solid #f1f1f1;border-left:1px solid #f1f1f1; text-align:right;"
                                                 rowspan="2">
-                                                <div> </div>
+                                                <div></div>
                                             </td>
-                                            <td style="border-bottom:1px solid #eee;border-left:1px solid #eee; text-align:right;"
+                                            <td style="border-bottom:1px solid #f1f1f1;border-left:1px solid #f1f1f1; text-align:right;"
                                                 rowspan="2">
-                                                <div> </div>
+                                                <div></div>
                                             </td>
-                                            <td style="border-bottom:1px solid #eee;border-left:1px solid #eee; text-align:right;"
+                                            <td style="border-bottom:1px solid #f1f1f1;border-left:1px solid #f1f1f1; text-align:right;"
                                                 rowspan="2">
-                                                <div> </div>
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Brut fis </div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Brut fis</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee;">
-                                                <div> Cot. Sal. </div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1;">
+                                                <div>Cot. Sal.</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Acquis mois </div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Acquis mois</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Brut SS </div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Brut SS</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Cot. Pat.</div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Cot. Pat.</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Total acquis </div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Total acquis</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-bottom:1px solid #eee;" rowspan="2">
-                                                <div> Cumul</div>
+                                            <td style="border-bottom:1px solid #f1f1f1;" rowspan="2">
+                                                <div>Cumul</div>
                                             </td>
-                                            <td style="border-bottom:1px solid #eee;border-left:1px solid #eee; text-align:right;"
+                                            <td style="border-bottom:1px solid #f1f1f1;border-left:1px solid #f1f1f1; text-align:right;"
                                                 rowspan="2">
-                                                <div> </div>
+                                                <div></div>
                                             </td>
-                                            <td style="border-bottom:1px solid #eee;border-left:1px solid #eee; text-align:right;"
+                                            <td style="border-bottom:1px solid #f1f1f1;border-left:1px solid #f1f1f1; text-align:right;"
                                                 rowspan="2">
-                                                <div> </div>
+                                                <div></div>
                                             </td>
-                                            <td style="border-bottom:1px solid #eee;border-left:1px solid #eee; text-align:right;"
+                                            <td style="border-bottom:1px solid #f1f1f1;border-left:1px solid #f1f1f1; text-align:right;"
                                                 rowspan="2">
-                                                <div> </div>
+                                                <div></div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; " nowrap="nowrap">
-                                                <div> Plafond</div>
+                                            <td style="border-left:1px solid #f1f1f1; " nowrap="nowrap">
+                                                <div>Plafond</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Hrs Trav</div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Hrs Trav</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td nowrap="nowrap" style="border-left:1px solid #eee; ">
-                                                <div> Total pris </div>
+                                            <td nowrap="nowrap" style="border-left:1px solid #f1f1f1; ">
+                                                <div>Total pris</div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
-                                            <td style="border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                            <td style="border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; ">
-                                                <div> Net imp.</div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; ">
+                                                <div>Net imp.</div>
                                             </td>
                                             <td
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; ">
-                                                <div> Hrs Payées</div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; ">
+                                                <div>Hrs Payées</div>
                                             </td>
                                             <td
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                             <td nowrap="nowrap"
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; ">
-                                                <div> Restant </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; ">
+                                                <div>Restant</div>
                                             </td>
                                             <td
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                             <td
-                                                style="border-bottom:1px solid #eee; border-left:1px solid #eee; text-align:right;">
-                                                <div> </div>
+                                                style="border-bottom:1px solid #f1f1f1; border-left:1px solid #f1f1f1; text-align:right;">
+                                                <div></div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -863,7 +847,6 @@
                                 Pour plus d’informations sur le bulletin de paie, reportez-vous à la rubrique disponible
                                 sur le portail www.service-public.fr
                             </td>
-                            <td style="text-align:right;">1/3</td>
                         </tr>
                     </tbody>
                 </table>

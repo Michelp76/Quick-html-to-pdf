@@ -30,6 +30,13 @@ const generateHtmlToPdf = async (htmlContent, isDebug = false) => {
     await page.setContent(htmlContent);
     const pdf = await page.pdf({
       landscape: false,
+      format: "A4",
+      headerTemplate: "<div/>",
+      // Compte les pages (ex. pages 2/3)
+      // https://github.com/puppeteer/puppeteer/issues/5345
+      displayHeaderFooter: true,      
+      footerTemplate:
+        '<div style="text-align: right;width: 297mm;font-size: 8px;"><span style="margin-right: 1cm"><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>',
     });
     if (!isDebug) browser.close();
     return pdf;
